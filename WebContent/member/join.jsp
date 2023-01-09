@@ -9,6 +9,6 @@
 <body>
 <h3>회원 등록</h3>
 
-<a href="">홈</a>
+<a href="../">홈</a>
 </body>
 </html>

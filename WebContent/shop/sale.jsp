@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>매출조회/title>
+<title>매출조회</title>
 </head>
 <body>
 <h3>매출조회</h3>
+<a href="../">홈</a>
 </body>
 </html>
