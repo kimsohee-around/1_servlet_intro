@@ -8,7 +8,11 @@
 </head>
 <body>
 <h3>회원 등록</h3>
-
-<a href="">홈</a>
+<!-- 현재 위치가 member 폴더 . url 이 /member/save 중에 action url 값은 save -->
+<form action="save" method="post">  <!-- url에 입력값 파라미터(? 뒤에 쿼리스트링) 없습니다. -->
+	<input type="text" name = "username">
+	<button>등록</button>  <!-- submit 버튼 -->
+</form>
+<a href="../">홈</a>
 </body>
 </html>
