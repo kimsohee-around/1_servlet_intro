@@ -44,7 +44,9 @@ public class MemberUpdateServlet extends HttpServlet {   //http요청처리 서�
 
 	//요청 메소드가 POST 일떄 - service 메소드와 선택해서 하나만 사용합니다.
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// 입력받은 데이터 수정
 		
+		response.sendRedirect("list");			//url 이동하는 것이 목적
 	}
 
 }

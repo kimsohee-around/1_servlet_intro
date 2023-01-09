@@ -8,6 +8,11 @@
 </head>
 <body>
 <h3>회원 수정</h3>
+<form action="update" method="post">
+	<input type="text" name="username">
+	<button>수정</button>
+</form>
+
 <a href="../">홈</a>
 </body>
 </html>
