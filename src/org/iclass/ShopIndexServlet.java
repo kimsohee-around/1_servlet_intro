@@ -29,7 +29,7 @@ public class ShopIndexServlet extends HttpServlet {
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 		//request를 index.jsp 파일로 전달합니다.목적은 `서블릿 처리 결과 데이터`를 request 에 담아 보냅니다.
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/member/update.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("../index.jsp");
 		dispatcher.forward(request, response);
 	}
 }
