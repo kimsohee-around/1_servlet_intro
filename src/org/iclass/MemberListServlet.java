@@ -36,6 +36,16 @@ public class MemberListServlet extends HttpServlet {   //http요청처리 서블
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 브라우저 document(문서)에 출력 - document.write()
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		logger.info("[MyInfo] request URL:{}, URI:{}, 컨텍스트패스:{}, 서블릿패스:{}"
+				,request.getRequestURL()
+				,request.getRequestURI()
+				,request.getContextPath()
+				,request.getServletPath());
+		
+		//jsp에 데이터를 전달하는 예시 : jdbc 연동되면 데이터는 db에서 조회한 결과
+		//request 객체의 애트리뷰트에 데이터 저장
+		request.setAttribute("hello", "안녕~!!반가워~~^^");
+		//hello는 데이터이름(변수명 취급) , "안녕~~~~" 는 데이터 (데이터 타입은 Object)
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/member/list.jsp");
 		dispatcher.forward(request, response);

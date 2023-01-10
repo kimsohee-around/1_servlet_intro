@@ -24,7 +24,7 @@ public class MemberSaveServlet extends HttpServlet {   //http요청처리 서블
 		logger.info("[MyInfo]회원등록 입력값 저장 서블릿 초기화");
 	}
 
-	//form 태그의 입력값을 전달받아 request(url,header,body) 의 body 에 저장하는 방식이 POST 
+	//form 태그의 입력값을 전달받아 request(url,header,body 데이터로 구성) 의 body 에 저장하는 방식이 POST 
 	//요청 메소드가 POST 일떄 - service 메소드와 선택해서 하나만 사용합니다.
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//입력값을 처리하고  (db 변경)

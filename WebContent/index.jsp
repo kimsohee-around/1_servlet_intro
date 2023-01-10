@@ -17,6 +17,7 @@
 	<li><a href="member/update">회원수정</a></li>
 	<li><a href="./">홈1</a></li>
 	<li><a href="./index">홈2</a></li>
+	<li><a href="login">로그인</a></li>
 </ul>
 </body>
 </html>
